@@ -6,7 +6,6 @@ import { KlesOdinDatePipe } from './pipes/kles-odin-date.pipe';
 @NgModule({
   declarations: [KlesOdinDatePipe],
   imports: [
-    BrowserModule,
     M3OdinModule
   ],
   exports: [KlesOdinDatePipe]

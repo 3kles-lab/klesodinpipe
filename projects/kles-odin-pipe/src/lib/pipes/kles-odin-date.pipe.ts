@@ -15,7 +15,6 @@ export class KlesOdinDatePipe implements PipeTransform {
         if (date) {
             return this.userService.getUserContext().pipe(
                 map(context => {
-                    console.log(context)
                     const format = context.dateFormat?.toUpperCase() || 'YYMMDD';
                     return moment(date).format(format);
 
